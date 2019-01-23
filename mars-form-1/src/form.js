@@ -24,6 +24,7 @@ class Form extends Component {
 }
     
     handleSubmit(event) {
+        debugger
         event.preventDefault()
         const { name, lastName, date, countries, formCompleted}= this.state
         if (name && lastName && date && countries) {
@@ -40,10 +41,12 @@ class Form extends Component {
                 Form submitted
             </div>)
         }
+
         return (
             <div>
                 <h1>Mission to Mars Registration Form</h1>
                 <div>
+                    <form className="form">
                     <label htmlFor="name">First Name: </label>
                     <input onChange={this.changeHandle} type="text" name="name" value={this.name}></input>
                     <br/>
@@ -68,11 +71,11 @@ class Form extends Component {
                     </select>
                     <br/>
                     <p> Why do you want to be a Mars explorer ? </p>
-                    <input name = "whyMars" onChange = {this.changeHandle} type = "text"></input>
+                    <input className="why" name = "whyMars" onChange = {this.changeHandle} type = "text"></input>
                     <br/>
                     <button name ="submit" onSubmit = {this.handleSubmit} >SUBMIT!</button>
 
-
+                    </form>
                 </div>
             </div>
             

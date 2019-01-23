@@ -1,5 +1,5 @@
 import React from 'react'
-let diets = ["omnivore", "vegetarian", "vegan", "pussy"]
+let diets = ["omnivore", "vegetarian", "vegan"]
 
 function PopulateDiet() {
      return diets.map(diet => {
