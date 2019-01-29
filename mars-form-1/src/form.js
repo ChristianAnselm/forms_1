@@ -24,9 +24,8 @@ class Form extends Component {
 }
     
     handleSubmit(event) {
-        debugger
         event.preventDefault()
-        const { name, lastName, date, countries, formCompleted}= this.state
+        const { name, lastName, date, countries, formCompleted }= this.state
         if (name && lastName && date && countries) {
         this.setState({formCompleted:!formCompleted})
        
@@ -41,7 +40,7 @@ class Form extends Component {
                 Form submitted
             </div>)
         }
-
+        
         return (
             <div>
                 <h1>Mission to Mars Registration Form</h1>
@@ -77,10 +76,11 @@ class Form extends Component {
 
                     </form>
                 </div>
+                <img src="https://www.washingtonpost.com/resizer/nF0Ep9wjnMUMs2xAw4PYBt6IiWY=/480x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/EHBDQNJ6VY2E3JROUFOMONLBQQ.jpg"></img>
             </div>
             
-        )
+            )
+        }
     }
-}
 
 export default Form;
