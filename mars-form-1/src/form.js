@@ -76,7 +76,9 @@ class Form extends Component {
 
                     </form>
                 </div>
-                <img src="https://www.washingtonpost.com/resizer/nF0Ep9wjnMUMs2xAw4PYBt6IiWY=/480x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/EHBDQNJ6VY2E3JROUFOMONLBQQ.jpg"></img>
+                <div className="Johnny">
+                <img className="joy" src="https://www.washingtonpost.com/resizer/nF0Ep9wjnMUMs2xAw4PYBt6IiWY=/480x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/EHBDQNJ6VY2E3JROUFOMONLBQQ.jpg"></img>
+                </div>
             </div>
             
             )

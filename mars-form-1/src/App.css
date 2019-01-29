@@ -16,6 +16,11 @@ form {
     text-align: center
   }
 
-why {
+.why {
     width: 100px
+}
+
+.joy {
+    display: flex;
+    justify-self: center
 }
